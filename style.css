@@ -1,10 +1,13 @@
-@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Poppins&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Poppins&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Poppins&family=Quicksand:wght@300..700&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@600&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Red+Hat+Display:wght@300&family=Urbanist:wght@900&display=swap') */
 * {
     font-family: "Quicksand", sans-serif;
-    font-weight: 500;
+    /* font-weight: 500; */
     font-style: normal;
+}
+body{
+    overflow-x: hidden;
 }
 
 header {
@@ -27,7 +30,6 @@ header {
     width: 100%;
     background-attachment: fixed;
     background: #1a1a1a;
-    /* border-bottom: 1px solid #fff; */
 }
 
 .tummenu::before {
@@ -65,6 +67,10 @@ header {
 .menuitems a {
     color: #fff !important;
     text-decoration: none !important;
+}
+
+.menuitems a:hover {
+    color: #BFA16E !important;
 }
 
 .linkarea {
@@ -230,10 +236,10 @@ span.line {
     width: 100%;
     top: 0;
     height: 100%;
-    background-repeat: no-repeat;
     background: url(images/Vector-Smart-Object-1.png);
-    background-size: contain;
-
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
 }
 
 .services-cards .card {
@@ -321,13 +327,13 @@ h2 {
 }
 
 .image-content li {
-    font-family: "Font Awesome 6 Pro";
     padding-left: 1rem;
     color: white;
 }
 
 .image-content li::marker {
     content: "\f058";
+    font-family: "Font Awesome 6 Pro";
     font-size: 2rem;
 
 }
@@ -349,9 +355,9 @@ h2 {
 }
 
 .benefit span p {
-    font-family: "Cormorant", serif !important;
-    font-weight: 500;
-    font-optical-sizing: auto;
+    font-family: "Cormorant Garamond", serif;
+    font-weight: 600;
+    font-style: normal;
     font-size: 2rem;
     color: #D1AF77;
     font-style: normal;
@@ -381,8 +387,8 @@ h2 {
 
 .counter {
     color: #ffffff;
-    font-family: "Cormorant", sans-serif !important;
-
+    font-family: "Cormorant Garamond", serif;
+    font-style: normal;
     font-size: 3rem;
 }
 
@@ -478,7 +484,7 @@ small {
 
 .card-content {
     padding: 10em 2em 2em 2em;
-    background-color:rgb(0 0 0 / 0%);
+    background-color: rgb(0 0 0 / 0%);
     background-image: linear-gradient(180deg, rgb(255 255 255 / 0%) 0%, #000000 100%)
 }
 
@@ -515,7 +521,7 @@ small {
 }
 
 .deal-card a:hover {
-    font-size: 1rem;
+    transform: scale(0.9);
     color: #fff;
 }
 
@@ -560,15 +566,6 @@ small {
     color: #2575FC !important;
 }
 
-.slider p {
-    /* color: #fff; */
-}
-
-.slider-elemet {
-    /* color: #fff; */
-    /* position: relative; */
-}
-
 .tirnak {
     position: relative;
 }
@@ -589,7 +586,9 @@ small {
     gap: 1rem;
     justify-content: space-between;
     align-items: center;
-}.yorum p{
+}
+
+.yorum p {
     color: #ffffff8a;
 }
 
@@ -633,12 +632,315 @@ small {
     margin: 0;
 }
 
-.packages{
+.packages {
     padding: 3rem 0;
 }
-.big-cards .card-content{
+
+.big-cards .card-content {
     padding: 15em 3em 3em 3em;
 }
+
+.content {
+    text-align: center;
+    color: #fff;
+    padding: 5rem 0;
+    display: flex;
+    gap: 2rem 0;
+    flex-direction: column;
+}
+
+.blogs {
+    padding: 3rem 0;
+}
+
+.blog-arctitle {
+    text-align: center;
+}
+
+.blog-arctitle {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.blog-img {
+    width: 100%;
+}
+
+.footer-social .icons div {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.footer-menu {
+    align-items: center;
+    padding: 3rem 0;
+    gap: 0 2rem;
+}
+
+.footer-social .icons a {
+    max-width: 35px;
+    max-height: 35px;
+}
+
+.icon {
+    max-width: 35px;
+    max-height: 35px;
+}
+
+.footer-links ul {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.contact-area {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    padding: 3rem 0 0 0;
+}
+
+
+.footer-back {
+    position: relative;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-image: url(images/Vector-Smart-Object-1.png);
+    background-color: #1a1a1a;
+
+}
+
+.footer-backgro {
+    width: 100%;
+    padding: 3rem 0 0 0;
+    height: 100%;
+    /* background-color: rgba(0, 0, 0, 0.73); */
+}
+
+.footer-links ul li a {
+    color: #fff;
+    text-decoration: none !important;
+}
+
+.footer-links ul li a:hover {
+    color: #BFA16E !important;
+}
+
+.icons .icon i {
+    font-size: 1rem;
+}
+
+.contact-area input {
+    color: #fff;
+    border-style: solid;
+    border-width: 0px 0px 1px 0px;
+    border-color: #BFA16E;
+    background-color: transparent;
+    width: 100%;
+    max-width: 70%;
+    margin-right: -10px;
+    padding: 17.5px 16px 15.5px 16px;
+}
+
+.contact-area button {
+    padding: 16.5px 20px 16.5px 20px;
+    color: white;
+    background-color: #BFA16E;
+    border-style: none;
+    border-radius: 5px 5px 5px 0px;
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0);
+
+}
+
+.copyright {
+    padding-top: 15rem;
+    padding-bottom: 1rem;
+    text-align: center;
+    color: #fff;
+}
+
+.footer-backgro hr {
+    border-top: 1px solid #272727;
+}
+
+.contact-area input,
+.contact-area button {
+    outline: 0 !important;
+}
+
+
+
+.button-ani-reverse {
+    color: #ffffff;
+    background-color: #d1af77;
+    text-decoration: none;
+    border-color: #d1af77;
+    width: auto;
+    margin: 0 auto;
+    font-family: "Quicksand", Sans-serif;
+    fill: #d1af77;
+    border-style: solid;
+    border-width: 1px 1px 1px 1px;
+    border-radius: 5px 5px 5px 5px;
+    padding: 15px 20px 15px 20px;
+    transition: all .4s;
+    transform: scale(1);
+
+}
+
+.button-ani-reverse:hover {
+    background-color: transparent;
+    transform: scale(0.9);
+    color: #d1af77;
+    text-decoration: none;
+}
+
+.button-ani {
+    width: auto;
+    margin: 0 auto;
+    font-family: "Quicksand", Sans-serif;
+    fill: #d1af77;
+    color: #d1af77;
+    background-color: transparent;
+    border-style: solid;
+    border-width: 1px 1px 1px 1px;
+    border-color: #d1af77;
+    border-radius: 5px 5px 5px 5px;
+    padding: 15px 20px 15px 20px;
+    transition: all .4s;
+    transform: scale(1);
+}
+
+.button-ani:hover {
+    color: #ffffff;
+    background-color: #d1af77;
+    text-decoration: none;
+    transform: scale(0.9);
+}
+
+.services-btn {
+    margin-left: 0;
+}
+
+.contact-banner {
+    background-image: url(images/F-12.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.breadcrumb {
+    padding-left: 0 !important;
+    background: none !important;
+}
+
+.breadcrumb span {
+    display: flex;
+}
+
+.banner-area {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.banner-area h1 {
+    color: #fff;
+}
+
+.breadcrumb a {
+    color: #fff;
+}
+
+.breadcrumb p {
+    color: #BFA16E;
+}
+
+.contact-back {
+    width: 100%;
+    padding: 3rem 0;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.73);
+}
+
+.contact-title a {
+    color: #000000 !important;
+    text-decoration: none !important;
+    font-size: 1.8rem;
+    display: flex;
+    align-items: center;
+    font-weight: 600;
+
+    gap: 1rem;
+}
+
+.phone a i {
+    transform: rotate(-45deg);
+}
+
+.contact-title:not(p) {
+
+    font-family: "Cormorant Garamond", serif;
+    font-style: normal;
+}
+
+.contact-title h3 {
+    color: #d1af77;
+}
+
+.contact-section {
+    padding: 4rem 0;
+}
+
+.contact-title {
+    display: flex;
+    gap: 2rem 0;
+    flex-direction: column;
+}
+
+form input {
+    width: 100%;
+}
+
+form textarea,
+form input {
+    border-style: solid;
+    border-width: 0px 0px 1px 0px;
+    border-color: #d1af77;
+    padding: 12px;
+    color: #686868;
+    outline: 0 !important;
+}
+
+form textarea {
+    width: 100%;
+    height: 185px;
+    resize: none;
+}
+
+.form-gap {
+    gap: 2rem 0;
+}
+
+.position {
+    position: relative;
+    z-index: -1;
+}
+
+.map iframe {
+    filter: grayscale(100%);
+    height: 400px;
+    width: 100%;
+}
+
 @media screen and (max-width:1024px) {
     .benefits {
         gap: 2rem;
@@ -658,13 +960,17 @@ small {
     }
 
     .banner-flex {
-        padding: 4rem 0;
+        padding: 6rem 0;
     }
 }
 
 @media screen and (max-width:992px) {
     .image-content {
         display: none;
+    }
+
+    .form-area {
+        flex-direction: column-reverse;
     }
 
     .services-cards .cards {
@@ -676,6 +982,18 @@ small {
         max-width: none;
     }
 
+    .footer-social {
+        max-width: 50%;
+        margin: 0 auto;
+    }
+
+    .footer-menu {
+        padding: 3rem 0;
+        gap: 2rem 2rem;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
 }
 
 @media screen and (max-width:768px) {
@@ -689,6 +1007,10 @@ small {
         right: 0;
         background: #00000000;
 
+    }
+
+    .linkarea {
+        height: auto;
     }
 
     .image-content {
@@ -799,6 +1121,9 @@ small {
     }
 
     .benefit {
+        max-width: 100%;
+    }
+    .services-cards .card {
         max-width: 100%;
     }
 }

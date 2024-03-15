@@ -5,6 +5,9 @@ $('.lines').click(function (event) {
     $('#line-3').toggleClass('line-3');
     $('.burger').toggleClass('open');
     $('.overlay').toggleClass('backgr');
+    $('section').toggleClass('position');
+    $('footer').toggleClass('position');
+
 });
 
 $('.overlay').click(function () {
@@ -14,6 +17,9 @@ $('.overlay').click(function () {
         $('#line-3').toggleClass('line-3');
         $('.burger').toggleClass('open');
         $('.overlay').toggleClass('backgr');
+        $('section').toggleClass('position');
+        $('footer').toggleClass('position');
+
     }
 });
 const numberElements = document.querySelectorAll('.counter');
@@ -48,3 +54,5 @@ $('.slider').slick({
     arrows: true
 }
 );
+
+document.getElementById("year").textContent = new Date().getFullYear();
